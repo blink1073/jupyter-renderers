@@ -12,6 +12,7 @@ This is a [monorepo](https://github.com/lerna/lerna#what-does-a-lerna-repo-look-
 | [json-extension](packages/json-extension) | `application/json` | `.json`, `.ipynb` |
 | [plotly-extension](packages/plotly-extension) | `application/vnd.plotly.v1+json` | `.plotly`, `.plotly.json` |
 | [vdom-extension](packages/vdom-extension) | `application/vdom.v1+json` | `.vdom`, `.vdom.json` |
+| vega3-extension | `application/vnd.vega.v3+json`, `application/vnd.vegalite.v2+json`| `.vg`, `.vl`, `.vg.json`, `.vl.json` |
 
 ## Install
 
@@ -41,7 +42,7 @@ jupyter labextension link packages/geojson-extension
 
 ### Rebuilding extensions
 
-After making changes to the source of the extension or renderer packages, the packages must be rebuilt:
+After making changes to the source packages, the packages must be rebuilt:
 
 ```
 # Rebuild the source
